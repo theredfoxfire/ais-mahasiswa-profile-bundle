@@ -1,0 +1,11 @@
+# src/Ais/MahasiswaProfileBundle/Resources/config/validation.yml
+Ais\MahasiswaProfileBundle\Entity\MahasiswaProfile:
+    properties:
+        nama_ayah:
+            - NotBlank: ~
+            - NotNull: ~
+            - Length:
+                min: 2
+                max: 100
+                minMessage: "Your title must be at least {{ limit }} characters length"
+                maxMessage: "Your title name cannot be longer than {{ limit }} characters length"

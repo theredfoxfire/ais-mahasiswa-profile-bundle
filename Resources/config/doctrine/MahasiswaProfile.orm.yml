@@ -1,0 +1,72 @@
+Ais\MahasiswaProfileBundle\Entity\MahasiswaProfile:
+ type: entity
+ table: mahasiswa_profile
+ id:
+  id: 
+   type: integer
+   generator: { strategy: AUTO }
+ fields:
+  mahasiswa_id:
+   type: integer
+  status_penerimaan:
+   type: string
+   length: 30
+  status_bayar:
+   type: string
+   length: 30
+  prodi:
+   type: string
+  dosen_wali:
+   type: integer
+  nama_ayah:
+   type: string
+   length: 100
+  tanggal_lahir_ayah:
+   type: date
+  pekerjaan_ayah:
+   type: string
+   length: 50
+  pendidikan_ayah:
+   type: string
+   length: 50
+  email_ayah:
+   type: string
+   length: 100
+  hp_ayah:
+   type: string
+   length: 20
+  nama_ibu:
+   type: string
+   length: 100
+  tanggal_lahir_ibu:
+   type: date
+  pekerjaan_ibu:
+   type: string
+   length: 50
+  pendidikan_ibu:
+   type: string
+   length: 50
+  email_ibu:
+   type: string
+   length: 100
+  hp_ibu:
+   type: string
+   length: 20
+  alamat_orang_tua:
+   type: text
+  provinsi_orang_tua:
+   type: integer
+  kabupaten_orang_tua:
+   type: integer
+  kecamatan_orang_tua:
+   type: integer
+  kelurahan_orang_tua:
+   type: integer
+  kode_pos_orang_tua:
+   type: integer
+  is_active:
+   type: boolean
+   nullable: true
+  is_delete:
+   type: boolean
+   nullable: true
