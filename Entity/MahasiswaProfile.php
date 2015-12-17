@@ -750,4 +750,3 @@ class MahasiswaProfile implements MahasiswaProfileInterface
         return $this->is_delete;
     }
 }
-

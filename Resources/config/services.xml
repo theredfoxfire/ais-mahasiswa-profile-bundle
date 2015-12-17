@@ -16,6 +16,16 @@
             <argument>%ais_mahasiswa_profile.mahasiswa_profile.class%</argument>
             <argument type="service" id="form.factory"></argument>
         </service>
+        
+        <service id="ais_mahasiswa_profile.mahasiswa_profile.manager" class="Doctrine\ORM\EntityManager" factory-service="doctrine" factory-method="getManagerForClass">
+			<argument>%ais_mahasiswa_profile.mahasiswa_profile.class%</argument>
+		</service>
+        
+        <service id="ais_mahasiswa_profile.mahasiswa_profile.repository" 
+			class="Ais\MahasiswaProfileBundle\Repository\MahasiswaProfileRepository"
+			factory-service="ais_mahasiswa_profile.mahasiswa_profile.manager" factory-method="getRepository">
+				<argument>%ais_mahasiswa_profile.mahasiswa_profile.class%</argument>
+		</service>
     </services>
 
 </container>

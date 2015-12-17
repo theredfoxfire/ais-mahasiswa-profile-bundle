@@ -1,6 +1,7 @@
 Ais\MahasiswaProfileBundle\Entity\MahasiswaProfile:
  type: entity
  table: mahasiswa_profile
+ repositoryClass: Ais\MahasiswaProfileBundle\Repository\MahasiswaProfileRepository
  id:
   id: 
    type: integer
