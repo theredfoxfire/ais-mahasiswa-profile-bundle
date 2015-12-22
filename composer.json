@@ -1,5 +1,5 @@
 {
-    "name" : "Ais/MahasiswaProfileBundle",
+    "name" : "ais/mahasiswaprofilebundle",
     "description" : "A bundle filled with MahasiswaProfile",
     "type" : "symfony-bundle",
     "authors" : [{
